@@ -182,11 +182,11 @@ void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin)
   */
 void Toggle_Leds(void)
 {
+    BSP_LED_Toggle(LED7);
+    HAL_Delay(100);
     BSP_LED_Toggle(LED8);
     HAL_Delay(100);
     BSP_LED_Toggle(LED10);
-    HAL_Delay(100);
-    BSP_LED_Toggle(LED7);
     HAL_Delay(100);
 }
 
